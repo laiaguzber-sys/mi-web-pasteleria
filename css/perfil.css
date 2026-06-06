@@ -1,0 +1,283 @@
+main{
+    margin: 5rem 5% 2rem 5%;
+}
+
+
+
+#perfil{
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 3rem;
+    margin-bottom: 50px;
+    align-items: start;
+}
+
+#perfil aside{
+    border: 1px solid #999;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#perfil aside img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#perfil aside p{
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    color: #777371;
+}
+
+#perfil aside h3{
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 11px;
+    letter-spacing: 0.5px;
+
+}
+
+#perfil aside button{
+    width: 100%;
+    max-width: 200px;
+    padding: 8px;
+    font-size: 0.75rem;
+    border: 1px solid #999;
+    color: #333;
+}
+
+#perfil aside button{
+    background-color: #8d827c;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+}
+
+
+
+
+#favoritos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-content: start;
+}
+
+#favoritos h3{
+    grid-column: span 2;
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+#favoritos article{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    border: 1px solid #999;
+    gap: 15px;
+}
+
+#favoritos article img{
+    width: 90px;
+    height: 75px;
+    object-fit: cover;
+    
+    margin-bottom: -5px;
+}
+
+#favoritos article h3{
+    grid-column: auto;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+#favoritos article p{
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.like img{
+    width: 20px;  
+    height: 20px;      
+    object-fit: contain; 
+    margin-left: auto;
+    padding: 11px;
+}
+
+#favoritos button{
+    grid-column: 2;
+    justify-self: end;
+    background-color: #8d827c;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+#configuracion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+#configuracion h2{
+    grid-column: span 2;
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+#datos, #seguridad, #notificaciones, #pago{
+    border: 1px solid #999;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#datos{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 100px 1fr; 
+    gap: 15px 25px;
+    align-items: center
+}
+
+#datos h3{
+    grid-column: span 2;
+}
+
+#datos br{
+    display: none;
+}
+
+#datos label{
+    grid-column: 1; 
+    align-self: center;
+    margin: 0;
+}
+
+#datos input{
+    width: 100%;
+    padding: 8px;
+    
+}
+
+#datos button{
+    grid-column: span 2;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+
+#pago{
+    grid-column: span 2;
+}
+
+#configuracion h3{
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+
+
+#seguridad input{
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+
+
+#notificaciones div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border: 1px solid #999;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    color: #3C3734;   
+    background-color: #fff;
+     
+}
+
+#notificaciones h3{
+    color: #3C3734;
+}
+
+#notificaciones{
+    color: white;
+    border-color: #9c928d;
+}
+
+
+
+
+#configuracion button{
+    align-self: flex-start;
+    background-color: #766e69;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-top: auto; 
+}
+
+
+
+#pago{
+    grid-column: span 2; 
+    border: 1px solid #999;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#pago h3{
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#pago p{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+#pago p{    
+    border: 1px solid #999;       
+    padding: 10px;               
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+h4{
+    margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    #favoritos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    } 
+}
